@@ -6,22 +6,22 @@ const getDateTime = (req, res) => {
     console.log(Hora);
 }
 
-const getInfoDevice = (req, res) => {
-    const info = {
-        plataforma: os.platform(), // 'darwin', 'win32', 'linux'
-        arquitectura: os.arch(), // 'x64', 'arm', 'ia32'
-        numeroCPUs: os.cpus().length,
-        memoriaLibre: os.freemem(),
-        memoriaTotal: os.totalmem(),
-        tiempoActivo: os.uptime(), // en segundos
-        hostname: os.hostname(),
-        red: os.networkInterfaces(),
-    }
-    res.json(info)
-}
+// const getInfoDevice = (req, res) => {
+//     const info = {
+//         plataforma: os.platform(), // 'darwin', 'win32', 'linux'
+//         arquitectura: os.arch(), // 'x64', 'arm', 'ia32'
+//         numeroCPUs: os.cpus().length,
+//         memoriaLibre: os.freemem(),
+//         memoriaTotal: os.totalmem(),
+//         tiempoActivo: os.uptime(), // en segundos
+//         hostname: os.hostname(),
+//         red: os.networkInterfaces(),
+//     }
+//     res.json(info)
+// }
 
 
 export default {
     getDateTime,
-    getInfoDevice
+    //getInfoDevice
 }

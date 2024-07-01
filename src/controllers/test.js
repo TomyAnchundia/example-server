@@ -23,5 +23,5 @@ const getInfoDevice = (req, res) => {
 
 export default {
     getDateTime,
-    //getInfoDevice
+    getInfoDevice
 }
